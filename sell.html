@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvoo Motors</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/browser.png" type="image/png">
+    <script src="js/bootstrap.js"></script>
+
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .cta-button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .thank-you-message {
+            text-align: center;
+            padding: 30px;
+            background-color: #28a745;
+            color: white;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/4e5714a5-28c8-4d1d-8f11-3bf5e53b6044.jpeg": width="200%" height="120"</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="carsforsale.html">Cars for Sale</a></li>
+            <li><a href="bikes.html">Bikes for sale</a></li>
+            <li><a href="trucks.html">Trucks for sale</a></li>
+            <li><a href="hire.html">Hire a Car</a></li>
+            <li><a href="sell.html">sell your car</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+      <div class="cta">
+        <a href="payment.html" class="cta-button"><img src="images/browser.png" alt="" width="20px"></a>
+      </div>
+    </nav>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sell Your Car</title>
+        
+    </head>
+    <body>
+
+        <div class="container">
+            <!-- Car Sale Form -->
+            <div class="form-container">
+                <h2>Sell Your Car</h2>
+                <form id="car-sale-form">
+                    <label for="car-make">Car Make</label>
+                    <input type="text" id="car-make" name="car-make" required>
+
+                    <label for="car-model">Car Model</label>
+                    <input type="text" id="car-model" name="car-model" required>
+
+                    <label for="car-year">Car Year</label>
+                    <input type="number" id="car-year" name="car-year" required>
+
+                    <label for="car-price">Price (Ksh)</label>
+                    <input type="number" id="car-price" name="car-price" required>
+
+                    <label for="car-description">Car Description</label>
+                    <textarea id="car-description" name="car-description" rows="4" required></textarea>
+
+                    <label for="seller-name">Your Name</label>
+                    <input type="text" id="seller-name" name="seller-name" required>
+
+                    <label for="seller-contact">Your Contact Email</label>
+                    <input type="email" id="seller-contact" name="seller-contact" required>
+
+                    <button type="submit" class="cta-button">Submit</button>
+                </form>
+
+                <div id="thank-you-message" class="thank-you-message" style="display: none;">
+                    <p>Thank you for submitting your car details. We will contact you soon!</p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Handle the form submission
+            document.getElementById('car-sale-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the form from refreshing the page
+
+                // Show the thank you message
+                document.getElementById('thank-you-message').style.display = 'block';
+
+                // Reset the form (optional)
+                document.getElementById('car-sale-form').reset();
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvoo Motors</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/browser.png" type="image/png">
+    <link rel="stylesheet" href="hire.css">
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .rental-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .rental-form h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input[type="text"], input[type="date"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/4e5714a5-28c8-4d1d-8f11-3bf5e53b6044.jpeg": width="200%" height="120"</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="carsforsale.html">Cars for Sale</a></li>
+            <li><a href="bikes.html">Bikes for sale</a></li>
+            <li><a href="trucks.html">Trucks for sale</a></li>
+            <li><a href="hire.html">Hire a Car</a></li>
+            <li><a href="sell.html">sell your car</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <div class="cta">
+            <a href="payment.html" class="cta-button"><img src="images/browser.png" alt="" width="20px"></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="rental-form">
+            <h2>Rent a Car</h2>
+            <form action="submit_rental.php" method="POST">
+                <!-- Select Car Model -->
+                <div class="form-group">
+                    <label for="car-model">Select Car Model:</label>
+                    <select id="car-model" name="car_model" required>
+                        <option value="">Choose a model</option>
+                        <option value="sedan">Sedan</option>
+                        <option value="suv">SUV</option>
+                        <option value="hatchback">Hatchback</option>
+                        <option value="convertible">Convertible</option>
+                        <option value="pickup">Pickup</option>
+                    </select>
+                </div>
+                
+                <!-- Pick-Up Date -->
+                <div class="form-group">
+                    <label for="pickup-date">Pick-Up Date:</label>
+                    <input type="date" id="pickup-date" name="pickup_date" required>
+                </div>
+                
+                <!-- Return Date -->
+                <div class="form-group">
+                    <label for="return-date">Return Date:</label>
+                    <input type="date" id="return-date" name="return_date" required>
+                </div>
+                
+                <!-- Rental Duration (Days) -->
+                <div class="form-group">
+                    <label for="duration">Rental Duration (in days):</label>
+                    <input type="number" id="duration" name="duration" required min="1">
+                </div>
+
+                <!-- Additional Options -->
+                <div class="form-group">
+                    <label for="extra-options">Additional Options (Optional):</label>
+                    <select id="extra-options" name="extra_options">
+                        <option value="">Select options</option>
+                        <option value="gps">GPS</option>
+                        <option value="child-seat">Child Seat</option>
+                        <option value="additional-driver">Additional Driver</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <a href="payment.html" class="cta-button">submit</a>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Car Rental Service. All rights reserved.</p>
+    </footer>
+</body>
+</html>

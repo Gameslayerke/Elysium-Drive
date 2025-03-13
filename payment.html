@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvoo Motors</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/browser.png" type="image/png">
+    <link rel="stylesheet" href="payment.css">
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="images/4e5714a5-28c8-4d1d-8f11-3bf5e53b6044.jpeg": width="200%" height="120"</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="carsforsale.html">Cars for Sale</a></li>
+            <li><a href="bikes.html">Bikes for sale</a></li>
+            <li><a href="trucks.html">Trucks for sale</a></li>
+            <li><a href="hire.html">Hire a Car</a></li>
+            <li><a href="sell.html">sell your car</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+      <div class="cta">
+        <a href="payment.html" class="cta-button"><img src="images/browser.png" alt="" width="20px"></a>
+      </div>
+    </nav>
+
+    <section class="transaction-form">
+        <h2>Send Money</h2>
+        <form id="moneyForm">
+          <label for="recipientEmail">Recipient's Email:</label>
+          <input type="email" id="recipientEmail" name="recipientEmail" required placeholder="Enter recipient's email">
+  
+          <label for="amount">Amount to Send:</label>
+          <input type="number" id="amount" name="amount" required placeholder="Enter amount" step="0.01" min="0.01">
+  
+          <label for="message">Message (Optional):</label>
+          <textarea id="message" name="message" placeholder="Add a personal message"></textarea>
+  
+          <button type="submit" id="sendButton">Send Money</button>
+        </form>
+      </section>
+      <section id="confirmationMessage" style="display:none;">
+        <h2>Transaction Successful!</h2>
+        <p>Your transaction was successful. A confirmation has been sent to your email.</p>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2025 Alvoo Motors - All rights reserved.</p>
+    </footer>
+  
+    <script>
+      document.getElementById("moneyForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the form from submitting immediately
+  
+        const recipientEmail = document.getElementById("recipientEmail").value;
+        const amount = parseFloat(document.getElementById("amount").value);
+        const message = document.getElementById("message").value;
+  
+        // You would typically send this data to your backend here for actual payment processing.
+        console.log("Sending money to:", recipientEmail);
+        console.log("Amount:", amount);
+        console.log("Message:", message);
+  
+        // Simulate a successful transaction for demo purposes
+        document.getElementById("confirmationMessage").style.display = "block";
+        document.querySelector(".transaction-form").style.display = "none";
+      });
+    </script>
+    <a href="hire.html" class="cta-button">Go back</a>
+</body>
+</html>

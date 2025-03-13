@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alvoo Motors</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" href="images/browser.png" type="image/png">
+        <script src="js/bootstrap.js"></script>
+
+        <style>
+            /* Global Styles */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                margin: 0;
+                padding: 0;
+                color: #333;
+            }
+
+            h1, h2 {
+                text-align: center;
+                color: #333;
+            }
+
+            .container {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                text-align: center;
+                color: #333;
+            }
+
+            /* Motorcycle Cards Section */
+            .motorcycle-cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 30px;
+                margin-bottom: 50px;
+            }
+
+            .motorcycle-card {
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 30%;
+                text-align: center;
+                padding: 15px;
+                transition: transform 0.3s ease;
+            }
+
+            .motorcycle-card:hover {
+                transform: scale(1.05);
+            }
+
+            .motorcycle-card img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+            .motorcycle-card h3 {
+                margin: 15px 0;
+                color: #444;
+            }
+
+            .motorcycle-card p {
+                color: #777;
+            }
+
+            .cta-button {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: #007bff;
+                color: white;
+                text-decoration: none;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+
+            .cta-button:hover {
+                background-color: #0056b3;
+            }
+
+            /* Form Section */
+            .form-container {
+                background-color: #fff;
+                padding: 30px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-top: 50px;
+            }
+
+            .form-container input,
+            .form-container select,
+            .form-container textarea {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .form-container button {
+                padding: 12px 20px;
+                background-color: #28a745;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .form-container button:hover {
+                background-color: #218838;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"><img src="images/4e5714a5-28c8-4d1d-8f11-3bf5e53b6044.jpeg": width="200%" height="120"</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="carsforsale.html">Cars for Sale</a></li>
+                <li><a href="bikes.html">Bikes for sale</a></li>
+                <li><a href="trucks.html">Trucks for sale</a></li>
+                <li><a href="hire.html">Hire a Car</a></li>
+                <li><a href="sell.html">sell your car</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <div class="cta">
+                <a href="payment.html" class="cta-button"><img src="images/browser.png" alt="" width="20px"></a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <h1>Welcome to Our Motorcycle Sales</h1>
+            <p class="section-title">Explore Our Wide Range of Motorcycles</p>
+
+            <!-- Sport Bikes Section -->
+            <section class="motorcycle-category">
+                <h2>Sport Bikes</h2>
+                <div class="motorcycle-cards">
+                    <div class="motorcycle-card">
+                        <img src="images/Yamaha YZF-R1.jpg" alt="Sport Bike 1">
+                        <h3>Yamaha YZF-R1</h3>
+                        <p>Price: $15,000</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                    <div class="motorcycle-card">
+                        <img src="images/Honda CBR1000RR.webp" alt="Sport Bike 2">
+                        <h3>Honda CBR1000RR</h3>
+                        <p>Price: $14,500</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                    <div class="motorcycle-card">
+                        <img src="images/BMW S1000RR.webp" alt="Sport Bike 3">
+                        <h3>BMW S1000RR</h3>
+                        <p>Price: $18,000</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cruisers Section -->
+            <section class="motorcycle-category">
+                <h2>Cruisers</h2>
+                <div class="motorcycle-cards">
+                    <div class="motorcycle-card">
+                        <img src="images/Harley-Davidson Iron 883.webp" alt="Cruiser 1">
+                        <h3>Harley-Davidson Iron 883</h3>
+                        <p>Price: $9,000</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                    <div class="motorcycle-card">
+                        <img src="images/Indian Scout.jpg" alt="Cruiser 2">
+                        <h3>Indian Scout</h3>
+                        <p>Price: $12,000</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                    <div class="motorcycle-card">
+                        <img src="images/Yamaha VMAX.webp" alt="Cruiser 3">
+                        <h3>Yamaha VMAX</h3>
+                        <p>Price: $14,000</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dirt Bikes Section -->
+            <section class="motorcycle-category">
+                <h2>Dirt Bikes</h2>
+                <div class="column">
+                    <div class="motorcycle-card">
+                        <img src="images/Kawasaki KX450.jpg" alt="Dirt Bike 1">
+                        <h3>Kawasaki KX450</h3>
+                        <p>Price: $8,500</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                        
+                    </div>
+
+                    <div class="motorcycle-card">
+                        <img src="images/Yamaha YZ250F.webp" alt="Dirt Bike 3">
+                        <h3>Yamaha YZ250F</h3>
+                        <p>Price: $7,800</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                    <div class="motorcycle-card">
+                        <img src="images/Honda CRF450R.jpg" alt="Dirt Bike 2">
+                        <h3>Honda CRF450R</h3>
+                        <p>Price: $9,200</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                    <div class="motorcycle-card">
+                        <img src="images/Honda CRF450R22.jpg" alt="Dirt Bike 2">
+                        <h3>Honda CRF950R</h3>
+                        <p>Price: $9,200</p>
+                        <a href="payment.html" class="cta-button">Buy</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sales Form Section -->
+            <div class="form-container">
+                <h2>Sell Your Motorcycle</h2>
+                <form>
+                    <label for="motorcycle-make">Motorcycle Make</label>
+                    <input type="text" id="motorcycle-make" name="motorcycle-make" required>
+
+                    <label for="motorcycle-model">Motorcycle Model</label>
+                    <input type="text" id="motorcycle-model" name="motorcycle-model" required>
+
+                    <label for="motorcycle-year">Year</label>
+                    <input type="number" id="motorcycle-year" name="motorcycle-year" required>
+
+                    <label for="motorcycle-price">Price ($)</label>
+                    <input type="number" id="motorcycle-price" name="motorcycle-price" required>
+
+                    <label for="motorcycle-description">Description</label>
+                    <textarea id="motorcycle-description" name="motorcycle-description" rows="4" required></textarea>
+
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+
+                    <label for="contact-email">Your Email</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+
+                    <button type="submit">Submit Your Motorcycle</button>
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>

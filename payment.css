@@ -1,0 +1,410 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 30px;
+  }
+  
+  .navbar .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f39c12;
+  }
+  
+  .cta .cta-button {
+    background-color: #f39c12;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .cta .cta-button:hover {
+    background-color: #e67e22;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+  
+    .cta {
+      margin-top: 20px;
+    }
+  }
+
+  .hero {
+    background-image: url('bmw.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(8, 4, 4);
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Slightly enlarges the button */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); /* Adds shadow effect */
+  }
+  .cta-button:active {
+    transform: scale(1); /* Slight shrink when clicked */
+    box-shadow: none;
+  }
+  .featured-cars {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+  }
+  
+  .featured-cars h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .car-card {
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .car-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .car-card h3 {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  
+  .car-card p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar-nav .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.navbar-nav .nav-item a:hover {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.hero {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.cta-button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #e07b00;
+}
+
+/* Carousel Section */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.featured-cars .section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.car-card h3 {
+  font-size: 24px;
+  margin-top: 15px;
+}
+
+/* About Us Section */
+.about-us .section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-footer .cta-button {
+  background-color: #28a745;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .row {
+      flex-direction: column;
+  }
+
+  .col-md-4 {
+      width: 100%;
+  }
+}
+/* About Us Section */
+.about-us .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-footer .cta-button {
+    background-color: #28a745;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-4 {
+        width: 100%;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .transaction-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: auto;
+  }
+  
+  .transaction-form h2 {
+    text-align: center;
+  }
+  
+  .transaction-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .transaction-form input, .transaction-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .transaction-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .transaction-form button:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
